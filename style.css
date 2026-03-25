@@ -234,6 +234,7 @@ p.section-sub {
   height: 64px;
   margin: 0 auto 16px;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .feature-item h3 {
