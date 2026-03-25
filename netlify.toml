@@ -1,0 +1,27 @@
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/home/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/kontakt"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/kontakt/"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/privacy-policy/"
+  to = "/privacy-policy.html"
+  status = 301
+
+[build]
+  publish = "."

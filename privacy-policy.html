@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy policy – AgilityGame</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="https://duyn491kcolsw.cloudfront.net/files/2s/2sd/2sd9d9.ico?ph=042a6ea408" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="https://042a6ea408.clvaw-cdnwnd.com/6d45e4eedce1f12df933224e9735f747/200000002-7821078212/400x400.png?ph=042a6ea408"
+           alt="Bookdragon Development" />
+      Bookdragon Development
+    </a>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Agility Game</a></li>
+        <li><a href="privacy-policy.html" class="active">Privacy policy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="page-header">
+  <h1>Privacy policy</h1>
+</div>
+
+<div class="page-content">
+  <p>This Privacy Policy describes how Bookdragon Development (Tomas Hutyra) handles information in connection with the <strong>Agility Game</strong> (available on Google Play). Effective date: June 7, 2025.</p>
+
+  <h2>1. Data We Collect</h2>
+  <p>We collect only email addresses, and only when voluntarily provided by you within the game interface. We do <strong>not</strong> collect IP addresses, location data, or device identifiers.</p>
+
+  <h2>2. How We Collect It</h2>
+  <p>All information comes directly from users through optional input fields in the game. There are no background data harvesting processes.</p>
+
+  <h2>3. Technologies Used</h2>
+  <p>The game uses <strong>Google AdMob</strong> for displaying advertisements and is built with <strong>Unreal Engine</strong>. We do not employ analytics SDKs, cookies, or automated tracking of any kind.</p>
+
+  <h2>4. How We Use Your Data</h2>
+  <p>Collected email addresses are used solely for gameplay improvement and optional communication features. No profiling or personalized advertising is performed.</p>
+
+  <h2>5. Data Sharing</h2>
+  <p>We do not share any personal information with third parties.</p>
+
+  <h2>6. Data Storage</h2>
+  <p>Data remains locally on your device and persists only while the game is installed or until you manually delete it.</p>
+
+  <h2>7. Your Rights</h2>
+  <p>You may decline email entry at any time without affecting gameplay. You may request access to or deletion of your data through the game settings or by contacting us directly.</p>
+
+  <h2>8. Policy Updates</h2>
+  <p>We reserve the right to modify this policy. Updates will appear in-game or in the store listing.</p>
+
+  <h2>9. Contact</h2>
+  <p>For privacy-related questions contact: <a href="mailto:tomas.hutyra@gmail.com">tomas.hutyra@gmail.com</a></p>
+</div>
+
+<footer>
+  <span>©&nbsp;2025&nbsp;Všechna práva vyhrazena</span>
+  <a href="privacy-policy.html">Privacy policy</a>
+  <a href="contact.html">Contact</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('nav-menu');
+  hamburger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', String(open));
+  });
+  menu.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => menu.classList.remove('open'))
+  );
+</script>
+</body>
+</html>
