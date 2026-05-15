@@ -23,5 +23,20 @@
   to = "/privacy-policy.html"
   status = 301
 
+[[redirects]]
+  from = "/agility-game"
+  to = "/agility-game.html"
+  status = 301
+
+[[redirects]]
+  from = "/questdeck"
+  to = "/questdeck.html"
+  status = 301
+
+[[redirects]]
+  from = "/questdeck-privacy-policy"
+  to = "/questdeck-privacy-policy.html"
+  status = 301
+
 [build]
   publish = "."
