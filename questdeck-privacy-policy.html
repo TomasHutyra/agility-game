@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – QuestDeck | Bookdragon Development</title>
+  <meta name="description" content="Privacy policy for QuestDeck by Bookdragon Development. QuestDeck does not collect any data." />
+  <link rel="canonical" href="https://www.bookdragondev.com/questdeck-privacy-policy.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.bookdragondev.com/questdeck-privacy-policy.html" />
+  <meta property="og:title" content="Privacy Policy – QuestDeck" />
+  <meta property="og:description" content="QuestDeck does not collect any data." />
+  <meta property="og:site_name" content="Bookdragon Development" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Bookdragon Development logo" width="40" height="40" />
+      Bookdragon Development
+    </a>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="agility-game.html">Agility Game</a></li>
+        <li><a href="questdeck.html" class="active">QuestDeck</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="page-header" style="border-bottom:1px solid var(--border)">
+  <div style="max-width:var(--max-w);margin:0 auto;padding:0 24px">
+    <p style="color:var(--accent-qd);font-size:0.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">QuestDeck</p>
+    <h1 style="color:var(--heading);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700">Privacy Policy</h1>
+    <p style="color:var(--muted);font-size:0.82rem;margin-top:8px">Last updated: May 15, 2026</p>
+  </div>
+</div>
+
+<div class="page-content page-content--qd">
+
+  <div class="highlight-box">
+    <p class="highlight-box__title">QuestDeck does not collect any data.</p>
+    <p class="highlight-box__sub">The app works entirely offline and never transmits any information.</p>
+  </div>
+
+  <p>This Privacy Policy explains how QuestDeck ("the app") handles information.</p>
+
+  <h2>Data Collection</h2>
+  <p>QuestDeck does not collect, store, transmit, or share any personal information. The app does not require an account, login, or registration of any kind.</p>
+
+  <h2>Data Stored on Your Device</h2>
+  <p>The app stores the following data locally on your device only:</p>
+  <ul>
+    <li>Completed quests and their timestamps</li>
+    <li>Your XP points and level</li>
+    <li>App settings (sound and haptics preferences)</li>
+    <li>Unlocked quest packs</li>
+  </ul>
+  <p>This data never leaves your device. It is stored using your device's local storage and is not accessible to us or any third party.</p>
+
+  <h2>Network Access</h2>
+  <p>QuestDeck does not make any network requests. The app works entirely offline after installation.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>QuestDeck does not use any third-party services, SDKs, analytics tools, advertising networks, or crash reporting services.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>QuestDeck does not collect any information from anyone, including children under the age of 13.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If the app's data practices change in a future version, this policy will be updated accordingly.</p>
+
+  <h2>Contact</h2>
+  <p>If you have any questions about this Privacy Policy, contact us at: <a href="mailto:tomas.hutyra@gmail.com">tomas.hutyra@gmail.com</a></p>
+
+  <p style="margin-top:32px"><a href="questdeck.html">← Back to QuestDeck</a></p>
+
+</div>
+
+<footer>
+  <span>©&nbsp;2025&nbsp;Všechna práva vyhrazena</span>
+  <a href="questdeck-privacy-policy.html">Privacy policy</a>
+  <a href="contact.html">Contact</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('nav-menu');
+  hamburger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', String(open));
+  });
+  menu.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => menu.classList.remove('open'))
+  );
+</script>
+</body>
+</html>
