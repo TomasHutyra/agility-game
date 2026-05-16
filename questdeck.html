@@ -13,14 +13,14 @@
   <meta property="og:url" content="https://www.bookdragondev.com/questdeck.html" />
   <meta property="og:title" content="QuestDeck – Real-Life Activity Cards" />
   <meta property="og:description" content="Flip a card. Do something real. Works offline, no login needed." />
-  <meta property="og:image" content="https://www.bookdragondev.com/images/questdeck-icon.png" />
+  <meta property="og:image" content="https://www.bookdragondev.com/images/questdeck-FeaturedGraphic.png" />
   <meta property="og:site_name" content="Bookdragon Development" />
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="QuestDeck – Real-Life Activity Cards" />
   <meta name="twitter:description" content="Flip a card. Do something real. Works offline, no login needed." />
-  <meta name="twitter:image" content="https://www.bookdragondev.com/images/questdeck-icon.png" />
+  <meta name="twitter:image" content="https://www.bookdragondev.com/images/questdeck-FeaturedGraphic.png" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -30,7 +30,7 @@
     "name": "QuestDeck",
     "description": "A pocket deck of real-world activity cards. Pick a mood, flip three cards, and go do something real. Offline. No account.",
     "url": "https://www.bookdragondev.com/questdeck.html",
-    "image": "https://www.bookdragondev.com/images/questdeck-icon.png",
+    "image": "https://www.bookdragondev.com/images/questdeck-FeaturedGraphic.png",
     "operatingSystem": "Android",
     "applicationCategory": "LifestyleApplication",
     "publisher": {
@@ -42,13 +42,10 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="images/logo.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="qd-page">
 
 <header>
   <div class="nav-inner">
@@ -69,73 +66,90 @@
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
-<section class="qd-hero sc-d">
-  <div class="qd-hero__inner">
+<!-- HERO -->
+<section class="qd-hero-v2">
+  <div class="qd-hero-v2__inner">
     <div>
-      <span class="badge badge--alpha" style="margin-bottom:16px">Alpha</span>
-      <h1 style="color:var(--heading);font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:700;line-height:1.2;margin-bottom:12px;margin-top:12px">
-        QuestDeck<br><span style="color:var(--accent-qd)">Real-Life Activity Cards</span>
-      </h1>
-      <p class="sub" style="margin-bottom:8px">Flip a card. Do something real. Works offline, no login needed.</p>
-      <p class="sub" style="margin-bottom:24px">A pocket deck of 100+ real-world activity cards for bored moments, weekends, and friends.</p>
-      <a class="btn-qd" href="mailto:office@bookdragondev.com">Join alpha testing →</a>
-      <p style="margin-top:12px;font-size:0.82rem;color:var(--muted)">
-        Email us: <a href="mailto:office@bookdragondev.com" style="color:var(--accent-qd)">office@bookdragondev.com</a>
-      </p>
+      <span class="qd-hero-v2__label">Alpha &middot; Android</span>
+      <h1 class="qd-hero-v2__title">Flip a card.<br>Do something <em>real</em>.</h1>
+      <p class="qd-hero-v2__sub">A pocket deck of 100+ real-world activity ideas for bored moments, weekends, and adventures with friends. No account. No internet. No excuses.</p>
+      <a class="qd-hero-v2__cta" href="mailto:office@bookdragondev.com">Join alpha testing &rarr;</a>
+      <span class="qd-hero-v2__note">or email us: <a href="mailto:office@bookdragondev.com">office@bookdragondev.com</a></span>
     </div>
-    <div class="qd-hero__icon-wrap">
-      <img class="qd-hero__icon" src="images/questdeck-icon.png" alt="QuestDeck app icon" width="120" height="120" />
+    <div class="qd-featured-img">
+      <img src="images/questdeck-FeaturedGraphic.png" alt="QuestDeck — Pick a mood. Draw a quest. Do something real." width="800" height="419" loading="eager" />
     </div>
   </div>
 </section>
 
-<!-- ===== HOW IT WORKS ===== -->
-<section class="sc-cd" aria-label="How QuestDeck works">
-  <div style="max-width:var(--max-w);margin:0 auto;padding:48px 24px 24px">
-    <h2 style="color:var(--heading);font-size:1.2rem;font-weight:700">How it works</h2>
+<!-- HOW IT WORKS -->
+<section class="sc-d" aria-label="How QuestDeck works">
+  <div class="qd-section-header">
+    <p class="qd-section-header__label">Simple by design</p>
+    <h2 class="qd-section-header__title">How it works</h2>
   </div>
-  <div class="qd-steps" style="padding-top:0">
-    <div class="qd-step">
-      <div class="qd-step__label">1. Pick a mood</div>
-      <p class="qd-step__text">Bored, outside, with friends, weekend — 8 moods to choose from.</p>
+  <div class="qd-steps-v2">
+    <div class="qd-step-v2">
+      <div class="qd-step-v2__num">1</div>
+      <div class="qd-step-v2__title">Pick a mood</div>
+      <p class="qd-step-v2__text">Bored, outside, with friends, weekend — 8 moods to match where you are right now. QuestDeck meets you there.</p>
     </div>
-    <div class="qd-step">
-      <div class="qd-step__label">2. Flip 3 cards</div>
-      <p class="qd-step__text">Three quest cards appear face-down. Tap to reveal them one by one.</p>
+    <div class="qd-step-v2">
+      <div class="qd-step-v2__num">2</div>
+      <div class="qd-step-v2__title">Flip 3 cards</div>
+      <p class="qd-step-v2__text">Three quest cards appear face-down. Tap to reveal them one by one — the suspense is half the fun.</p>
     </div>
-    <div class="qd-step">
-      <div class="qd-step__label">3. Go do it</div>
-      <p class="qd-step__text">Choose one quest, do it, mark it done. Earn XP and level up.</p>
+    <div class="qd-step-v2">
+      <div class="qd-step-v2__num">3</div>
+      <div class="qd-step-v2__title">Go do it</div>
+      <p class="qd-step-v2__text">Pick one quest, go do something real, mark it done. Earn XP and level up your adventurer rank.</p>
     </div>
   </div>
 </section>
 
-<!-- ===== KEY FEATURES ===== -->
-<section class="sc-d" aria-label="QuestDeck features">
-  <div style="max-width:var(--max-w);margin:0 auto;padding:48px 24px 24px">
-    <h2 style="color:var(--heading);font-size:1.2rem;font-weight:700">Key features</h2>
+<!-- FEATURES -->
+<section class="sc-cd" aria-label="QuestDeck features">
+  <div class="qd-section-header">
+    <p class="qd-section-header__label">What you get</p>
+    <h2 class="qd-section-header__title">Designed to respect your time</h2>
   </div>
-  <div class="qd-features" style="padding-top:0;padding-bottom:48px">
-    <div class="qd-feature"><span class="qd-feature__check">✓</span><span>100+ real-world quests — solo, couples, friends</span></div>
-    <div class="qd-feature"><span class="qd-feature__check">✓</span><span>Works fully offline — no internet required</span></div>
-    <div class="qd-feature"><span class="qd-feature__check">✓</span><span>No account, no login, no tracking</span></div>
-    <div class="qd-feature"><span class="qd-feature__check">✓</span><span>XP system, levels, and progress history</span></div>
-    <div class="qd-feature"><span class="qd-feature__check">✓</span><span>Easy, medium, and hard difficulty</span></div>
-    <div class="qd-feature"><span class="qd-feature__check">✓</span><span>Android — Google Play (coming soon)</span></div>
+  <div class="qd-features-v2">
+    <div class="qd-feat-v2">
+      <span class="qd-feat-v2__icon">&#10003;</span>
+      <span>100+ real-world quests &mdash; solo, couples, friends</span>
+    </div>
+    <div class="qd-feat-v2">
+      <span class="qd-feat-v2__icon">&#10003;</span>
+      <span>Fully offline &mdash; no internet required, ever</span>
+    </div>
+    <div class="qd-feat-v2">
+      <span class="qd-feat-v2__icon">&#10003;</span>
+      <span>No account, no login, no tracking</span>
+    </div>
+    <div class="qd-feat-v2">
+      <span class="qd-feat-v2__icon">&#10003;</span>
+      <span>XP system, levels, and progress history</span>
+    </div>
+    <div class="qd-feat-v2">
+      <span class="qd-feat-v2__icon">&#10003;</span>
+      <span>Easy, medium, and hard difficulty cards</span>
+    </div>
+    <div class="qd-feat-v2">
+      <span class="qd-feat-v2__icon">&#10003;</span>
+      <span>Android &middot; Google Play (coming soon)</span>
+    </div>
   </div>
 </section>
 
-<!-- ===== ALPHA CTA ===== -->
-<section class="qd-cta">
-  <p class="qd-cta__label">Alpha testing</p>
-  <h2 class="qd-cta__title">Want to be one of the first?</h2>
-  <p class="qd-cta__text">QuestDeck is in alpha testing. Write to us and get access.</p>
-  <a class="btn-qd" href="mailto:office@bookdragondev.com">office@bookdragondev.com</a>
+<!-- CTA -->
+<section class="qd-cta-v2">
+  <h2 class="qd-cta-v2__title">Want to be one of the first?</h2>
+  <p class="qd-cta-v2__text">QuestDeck is in alpha. Write to us and get early access — and help shape what it becomes.</p>
+  <a class="qd-cta-v2__btn" href="mailto:office@bookdragondev.com">office@bookdragondev.com</a>
 </section>
 
 <footer>
-  <span>©&nbsp;2025&nbsp;Všechna práva vyhrazena</span>
+  <span>&copy;&nbsp;2025&nbsp;Bookdragon Development</span>
   <a href="questdeck-privacy-policy.html">Privacy policy</a>
   <a href="contact.html">Contact</a>
 </footer>
