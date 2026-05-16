@@ -27,13 +27,10 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="images/logo.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="home">
 
 <header>
   <div class="nav-inner">
@@ -54,59 +51,97 @@
   </div>
 </header>
 
-<div class="home-hero sc-d">
-  <p class="home-hero__label">Bookdragon Development</p>
-  <h1 class="home-hero__title">We make games and apps<br>worth your time.</h1>
-  <p class="home-hero__sub">From competitive dog agility to real-life adventure cards — built with care, without the fluff.</p>
-</div>
-
-<section class="sc-d" aria-label="Our apps">
-  <div class="product-cards">
-
-    <div class="product-card">
-      <div class="product-card__accent" style="background:var(--accent)"></div>
-      <div class="product-card__body">
-        <div class="product-card__header">
-          <img class="product-card__icon" src="images/logo.png" alt="Agility Game icon" width="48" height="48" />
-          <div>
-            <div class="product-card__title">Agility Game</div>
-            <div class="product-card__platform">PC · Android</div>
-          </div>
-        </div>
-        <p class="product-card__desc">Build original courses, race your dog through jumps, tunnels and slaloms, and compete with players worldwide.</p>
-        <div class="product-card__badges">
-          <span class="badge">Epic Store</span>
-          <span class="badge">Steam</span>
-          <span class="badge">Google Play</span>
-        </div>
-        <a class="btn-store" href="agility-game.html">More info →</a>
-      </div>
+<!-- HERO -->
+<section class="home-hero-v2">
+  <div class="home-hero-v2__glow" aria-hidden="true"></div>
+  <div class="home-hero-v2__float" aria-hidden="true">
+    <span class="home-blob home-blob--teal"></span>
+    <span class="home-blob home-blob--red"></span>
+    <span class="home-blob home-blob--gold"></span>
+  </div>
+  <div class="home-hero-v2__inner">
+    <p class="home-hero-v2__eyebrow">Independent studio · Brno</p>
+    <h1 class="home-hero-v2__title">Games &amp; apps you'll<br><em>actually</em> enjoy</h1>
+    <p class="home-hero-v2__sub">We're a small team that builds things we'd genuinely love ourselves — polished, fun, and free from dark patterns. Give them a try.</p>
+    <div class="home-hero-v2__ctas">
+      <a class="h-cta h-cta--game" href="agility-game.html">Explore Agility Game</a>
+      <a class="h-cta h-cta--deck" href="questdeck.html">Try QuestDeck</a>
     </div>
+  </div>
+</section>
 
-    <div class="product-card">
-      <div class="product-card__accent" style="background:var(--accent-qd)"></div>
-      <div class="product-card__body">
-        <div class="product-card__header">
-          <img class="product-card__icon" src="images/questdeck-icon.png" alt="QuestDeck icon" width="48" height="48" />
+<!-- PRODUCTS -->
+<section class="sc-cd home-products" aria-label="Our apps">
+  <div class="container">
+    <p class="home-sec-label">What we've built</p>
+    <h2 class="home-sec-title">Two apps. One standard of care.</h2>
+    <p class="home-sec-sub">Very different experiences — same commitment to making something genuinely good.</p>
+  </div>
+
+  <div class="home-product-grid">
+
+    <article class="hpcard">
+      <div class="hpcard__shot">
+        <img src="images/realworld.webp" alt="Agility Game — dog racing through an agility course" loading="lazy" />
+        <div class="hpcard__shot-overlay"></div>
+      </div>
+      <div class="hpcard__body">
+        <div class="hpcard__header">
+          <img class="hpcard__icon" src="images/AgilityGame-icon.png" alt="Agility Game icon" width="52" height="52" />
           <div>
-            <div class="product-card__title">QuestDeck</div>
-            <div class="product-card__platform">Android · <span style="color:var(--accent-qd)">Alpha</span></div>
+            <div class="hpcard__title">Agility Game</div>
+            <div class="hpcard__platform">PC &middot; Android</div>
           </div>
         </div>
-        <p class="product-card__desc">A pocket deck of real-world activity cards. Pick a mood, flip three cards, and go do something real. Offline. No account.</p>
-        <div class="product-card__badges">
+        <p class="hpcard__desc">Design your own courses, choose your dog, and race through jumps, tunnels and slaloms. The only dog agility simulator around — and a genuinely fun one at that. Free to try.</p>
+        <div class="hpcard__stores">
+          <a class="badge badge--link" href="https://store.epicgames.com/cs/p/agility-dash-27bafe" target="_blank" rel="noopener">Epic Store</a>
+          <a class="badge badge--link" href="https://store.steampowered.com/app/4007090/Agility_Game/" target="_blank" rel="noopener">Steam</a>
+          <a class="badge badge--link" href="https://play.google.com/store/apps/details?id=com.BookdragonDev.AgilityGame" target="_blank" rel="noopener">Google Play</a>
+        </div>
+        <a class="hpcard__cta hpcard__cta--ag" href="agility-game.html">See the game &rarr;</a>
+      </div>
+    </article>
+
+    <article class="hpcard">
+      <div class="hpcard__shot">
+        <img src="images/questdeck-FeaturedGraphic.png" alt="QuestDeck — real-world activity cards" loading="lazy" />
+        <div class="hpcard__shot-overlay"></div>
+      </div>
+      <div class="hpcard__body">
+        <div class="hpcard__header">
+          <img class="hpcard__icon" src="images/questdeck-icon.png" alt="QuestDeck icon" width="52" height="52" />
+          <div>
+            <div class="hpcard__title">QuestDeck</div>
+            <div class="hpcard__platform">Android &middot; <span style="color:var(--accent-qd)">Alpha</span></div>
+          </div>
+        </div>
+        <p class="hpcard__desc">Feeling stuck indoors? QuestDeck is a pocket deck of real-world activity ideas. Pick a mood, flip three cards, go do something real. No account. Works offline. Always.</p>
+        <div class="hpcard__stores">
           <span class="badge">Google Play</span>
           <span class="badge badge--alpha">Coming soon</span>
         </div>
-        <a class="btn-qd" href="questdeck.html">Join alpha →</a>
+        <a class="hpcard__cta hpcard__cta--qd" href="questdeck.html">Join the alpha &rarr;</a>
       </div>
-    </div>
+    </article>
 
   </div>
 </section>
 
+<!-- STUDIO NOTE -->
+<section class="sc-d home-studio">
+  <div class="home-studio__inner">
+    <img class="home-studio__logo" src="images/logo.png" alt="Bookdragon logo" width="56" height="56" />
+    <div>
+      <h2 class="home-studio__title">Built by people who actually care</h2>
+      <p class="home-studio__text">Bookdragon is a tiny independent studio from Brno. No investors to please, no growth metrics to hit. We just make things we'd genuinely want to use — and we hope you feel the same way.</p>
+      <a class="home-studio__link" href="contact.html">Say hello &rarr;</a>
+    </div>
+  </div>
+</section>
+
 <footer>
-  <span>©&nbsp;2025&nbsp;Všechna práva vyhrazena</span>
+  <span>&copy;&nbsp;2025&nbsp;Bookdragon Development</span>
   <a href="contact.html">Contact</a>
 </footer>
 

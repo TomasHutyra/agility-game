@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -21,7 +23,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Roboto', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
   background: var(--bg-dark);
   color: var(--text);
   font-size: 16px;
@@ -507,6 +509,15 @@ footer a:hover { color: var(--heading); }
   color: #fff;
   border-color: var(--accent-qd);
 }
+.badge--link {
+  transition: background .15s, color .15s, border-color .15s;
+  cursor: pointer;
+}
+.badge--link:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
 
 /* ===== PRODUCT CARDS (homepage) ===== */
 .product-cards {
@@ -741,4 +752,512 @@ footer a:hover { color: var(--heading); }
   .qd-hero__inner { grid-template-columns: 1fr; gap: 32px; padding: 40px 16px; }
   .qd-steps { grid-template-columns: 1fr; padding: 32px 16px; }
   .qd-features { grid-template-columns: 1fr; padding: 32px 16px; }
+}
+
+/* ===== HOME HERO V2 ===== */
+.home-hero-v2 {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-dark2);
+  padding: 96px 24px 80px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-hero-v2__glow {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 1000px;
+  height: 800px;
+  background: radial-gradient(ellipse at center bottom, rgba(224,128,83,0.18) 0%, transparent 68%);
+  pointer-events: none;
+}
+
+.home-hero-v2__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.home-hero-v2__eyebrow {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  padding: 4px 14px;
+  border: 1px solid rgba(224,128,83,0.35);
+  border-radius: 100px;
+}
+
+.home-hero-v2__title {
+  color: var(--heading);
+  font-size: clamp(2.1rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -.025em;
+  margin-bottom: 22px;
+}
+
+.home-hero-v2__title em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.home-hero-v2__sub {
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 520px;
+  margin: 0 auto 38px;
+}
+
+.home-hero-v2__ctas {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.h-cta {
+  display: inline-block;
+  padding: 13px 28px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  transition: transform .18s, box-shadow .18s, background .15s;
+}
+
+.h-cta:hover { transform: translateY(-2px); }
+
+.h-cta--game {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 22px rgba(224,128,83,0.38);
+}
+.h-cta--game:hover {
+  background: var(--accent-h);
+  box-shadow: 0 8px 32px rgba(224,128,83,0.52);
+}
+
+.h-cta--deck {
+  background: rgba(255,255,255,0.07);
+  color: var(--heading);
+  border: 1px solid rgba(255,255,255,0.16);
+}
+.h-cta--deck:hover { background: rgba(255,255,255,0.13); }
+
+/* floating orbs */
+.home-hero-v2__float {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.flt {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.flt--a {
+  width: 220px; height: 220px;
+  top: -80px; right: 6%;
+  opacity: .07;
+  animation: flt-bob 8s ease-in-out infinite;
+}
+
+.flt--b {
+  width: 110px; height: 110px;
+  bottom: 10%; left: 5%;
+  opacity: .09;
+  animation: flt-bob 10s ease-in-out infinite 2.5s;
+}
+
+.flt--c {
+  width: 55px; height: 55px;
+  top: 25%; right: 12%;
+  opacity: .12;
+  animation: flt-bob 6s ease-in-out infinite 1s;
+}
+
+@keyframes flt-bob {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%       { transform: translateY(-18px) scale(1.06); }
+}
+
+/* ===== HOME PRODUCTS SECTION ===== */
+.home-products { padding: 72px 0 80px; }
+
+.home-sec-label {
+  text-align: center;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.home-sec-title {
+  color: var(--heading);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: -.02em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.home-sec-sub {
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.home-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== HOME PRODUCT CARD ===== */
+.hpcard {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform .22s, box-shadow .22s;
+}
+
+.hpcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.45);
+}
+
+.hpcard__shot {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background: var(--bg-dark2);
+  position: relative;
+}
+
+.hpcard__shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform .4s ease;
+}
+
+.hpcard:hover .hpcard__shot img { transform: scale(1.05); }
+
+.hpcard__shot-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, var(--bg-dark) 100%);
+}
+
+.hpcard__body { padding: 26px 24px 28px; }
+
+.hpcard__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.hpcard__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: var(--bg-dark2);
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.hpcard__title {
+  color: var(--heading);
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -.01em;
+}
+
+.hpcard__platform {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-top: 3px;
+}
+
+.hpcard__desc {
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.hpcard__stores {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.hpcard__cta {
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  transition: transform .15s, box-shadow .15s, background .15s;
+}
+
+.hpcard__cta:hover { transform: translateY(-1px); }
+
+.hpcard__cta--ag {
+  background: var(--accent);
+  color: #fff;
+}
+.hpcard__cta--ag:hover {
+  background: var(--accent-h);
+  box-shadow: 0 4px 18px rgba(224,128,83,0.42);
+}
+
+.hpcard__cta--qd {
+  background: var(--accent-qd);
+  color: #fff;
+}
+.hpcard__cta--qd:hover {
+  background: var(--accent-qd-h);
+  box-shadow: 0 4px 18px rgba(255,140,66,0.42);
+}
+
+/* ===== STUDIO BLURB ===== */
+.home-studio {
+  border-top: 1px solid var(--border);
+  padding: 64px 24px;
+}
+
+.home-studio__inner {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.home-studio__logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+.home-studio__title {
+  color: var(--heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  margin-bottom: 10px;
+}
+
+.home-studio__text {
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.home-studio__link {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: opacity .15s;
+}
+.home-studio__link:hover { opacity: 0.75; text-decoration: underline; }
+
+/* ===== HOME RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .home-hero-v2 { padding: 68px 16px 60px; }
+  .flt--a { display: none; }
+  .flt--b { display: none; }
+  .home-product-grid { grid-template-columns: 1fr; padding: 0 16px; }
+  .home-products { padding: 52px 0 60px; }
+  .home-studio__inner { flex-direction: column; gap: 16px; }
+  .home-studio { padding: 48px 16px; }
+}
+
+@media (max-width: 480px) {
+  .home-hero-v2__ctas { flex-direction: column; align-items: stretch; }
+  .h-cta { text-align: center; }
+  .hpcard__shot { height: 170px; }
+}
+
+/* ===================================================
+   HOME — COLORFUL LIGHT THEME (body.home)
+   Palette drawn from the Bookdragon watercolor logo:
+   teal/green (dragon body), red-orange (left wing),
+   warm gold (AgilityGame tunnel).
+   =================================================== */
+body.home {
+  --bg-dark:   #fdf8f3;   /* warm cream */
+  --bg-dark2:  #f5ede3;   /* warm linen */
+  --bg-alt:    #ede4d8;   /* warm sand */
+  --accent:    #d9461a;   /* richer red-orange — dragon wing */
+  --accent-h:  #b83614;
+  --text:      #3d2010;   /* warm dark brown */
+  --heading:   #1a0c04;   /* near-black warm */
+  --muted:     #9a7060;
+  --border:    #e8d5c5;
+  --btn-bg:    #1a0c04;
+  --btn-text:  #fff;
+  /* teal secondary — dragon body */
+  --teal:      #2a9d8f;
+  --teal-h:    #1e8070;
+}
+
+/* ---- nav on light bg ---- */
+body.home nav a:hover,
+body.home nav a.active {
+  background: rgba(0,0,0,0.07);
+}
+
+/* ---- hero ---- */
+body.home .home-hero-v2 {
+  background: var(--bg-dark);
+}
+body.home .home-hero-v2__glow { display: none; }
+
+body.home .home-hero-v2__eyebrow {
+  color: var(--accent);
+  border-color: rgba(217,70,26,0.28);
+}
+
+body.home .home-hero-v2__title { color: var(--heading); }
+body.home .home-hero-v2__title em { color: var(--accent); }
+body.home .home-hero-v2__sub { color: var(--text); }
+
+/* colorful gradient blobs */
+.home-blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+body.home .home-blob--teal {
+  width: 560px; height: 560px;
+  top: -160px; left: -120px;
+  background: radial-gradient(circle, rgba(42,157,143,0.48) 0%, transparent 66%);
+  filter: blur(80px);
+}
+
+body.home .home-blob--red {
+  width: 500px; height: 500px;
+  top: -120px; right: -100px;
+  background: radial-gradient(circle, rgba(217,70,26,0.42) 0%, transparent 66%);
+  filter: blur(70px);
+}
+
+body.home .home-blob--gold {
+  width: 420px; height: 420px;
+  bottom: -100px; left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgba(245,184,48,0.40) 0%, transparent 66%);
+  filter: blur(70px);
+}
+
+/* ---- hero CTAs ---- */
+body.home .h-cta--game {
+  background: var(--accent);
+  box-shadow: 0 4px 22px rgba(217,70,26,0.36);
+}
+body.home .h-cta--game:hover {
+  background: var(--accent-h);
+  box-shadow: 0 8px 32px rgba(217,70,26,0.52);
+}
+
+body.home .h-cta--deck {
+  background: rgba(42,157,143,0.12);
+  color: var(--teal);
+  border: 1.5px solid rgba(42,157,143,0.36);
+}
+body.home .h-cta--deck:hover {
+  background: rgba(42,157,143,0.22);
+  color: var(--teal-h);
+}
+
+/* ---- product cards ---- */
+body.home .hpcard {
+  background: #fff;
+  border-color: var(--border);
+  box-shadow: 0 2px 16px rgba(60,20,5,0.07);
+}
+body.home .hpcard:hover {
+  box-shadow: 0 16px 48px rgba(60,20,5,0.16);
+}
+
+body.home .hpcard__icon {
+  background: var(--bg-dark2);
+  border-color: var(--border);
+}
+body.home .hpcard__title  { color: var(--heading); }
+body.home .hpcard__platform { color: var(--muted); }
+body.home .hpcard__desc   { color: var(--text); }
+
+body.home .badge {
+  background: var(--bg-alt);
+  color: var(--muted);
+  border-color: var(--border);
+}
+
+body.home .hpcard__cta--ag { background: var(--accent); }
+body.home .hpcard__cta--ag:hover {
+  background: var(--accent-h);
+  box-shadow: 0 4px 18px rgba(217,70,26,0.40);
+}
+
+/* QuestDeck card accent keeps its warm orange */
+body.home .hpcard__cta--qd { background: var(--accent-qd); }
+body.home .hpcard__cta--qd:hover {
+  background: var(--accent-qd-h);
+  box-shadow: 0 4px 18px rgba(255,140,66,0.40);
+}
+
+/* section headings */
+body.home .home-sec-label { color: var(--accent); }
+body.home .home-sec-title  { color: var(--heading); }
+body.home .home-sec-sub    { color: var(--muted); }
+
+/* ---- studio note ---- */
+body.home .home-studio__title { color: var(--heading); }
+body.home .home-studio__text  { color: var(--text); }
+body.home .home-studio__link  { color: var(--accent); }
+
+/* ---- footer ---- */
+body.home footer {
+  background: var(--bg-dark2);
+  border-top-color: var(--border);
+}
+body.home footer a:hover { color: var(--heading); }
+
+/* ---- responsive blobs ---- */
+@media (max-width: 768px) {
+  body.home .home-blob--teal { width: 300px; height: 300px; top: -100px; left: -80px; }
+  body.home .home-blob--red  { width: 260px; height: 260px; top: -80px; right: -60px; }
+  body.home .home-blob--gold { display: none; }
 }
