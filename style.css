@@ -401,6 +401,45 @@ footer a:hover { color: var(--heading); }
 .page-content a { color: var(--accent); }
 .page-content a:hover { text-decoration: underline; }
 
+/* ===== PRIVACY POLICY BRANDED HEADER ===== */
+.pp-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.pp-brand__icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+.pp-brand__label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: var(--accent);
+}
+
+.pp-brand__title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--heading);
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .pp-brand { gap: 14px; }
+  .pp-brand__icon { width: 52px; height: 52px; border-radius: 12px; }
+}
+
 .contact-info {
   background: var(--bg-alt);
   border: 1px solid var(--border);
@@ -1428,6 +1467,12 @@ body.ag-page .cta-section p { color: var(--heading); font-size: 1.05rem; }
 body.ag-page footer { background: var(--bg-dark2); border-top-color: var(--border); }
 body.ag-page footer a:hover { color: var(--accent); }
 
+/* ag-page privacy policy */
+body.ag-page .page-header { background: var(--bg-dark); border-bottom-color: rgba(245,184,48,0.18); }
+body.ag-page .page-content { color: var(--text); }
+body.ag-page .page-content h2 { color: var(--accent); }
+body.ag-page .page-content a { color: var(--accent); }
+
 /* --- sc-cd = dark forest green — clear visual rhythm vs near-black sc-d --- */
 body.ag-page .sc-cd { background: #0c1a08; }
 
@@ -1729,6 +1774,13 @@ body.qd-page nav a.active { background: rgba(0,0,0,0.07); }
 
 body.qd-page footer { background: var(--bg-dark2); border-top-color: var(--border); }
 body.qd-page footer a:hover { color: var(--heading); }
+
+/* qd-page privacy policy */
+body.qd-page .page-header { background: var(--bg-dark); border-bottom-color: var(--border); }
+body.qd-page .page-content { color: var(--text); }
+body.qd-page .page-content h2 { color: var(--heading); }
+body.qd-page .page-content a { color: var(--accent); }
+body.qd-page .highlight-box { background: var(--bg-alt); border-left-color: var(--accent); }
 
 /* ==========================================
    CONTACT PAGE  (body.contact-page)
