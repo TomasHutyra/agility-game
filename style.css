@@ -1428,8 +1428,51 @@ body.ag-page .cta-section p { color: var(--heading); font-size: 1.05rem; }
 body.ag-page footer { background: var(--bg-dark2); border-top-color: var(--border); }
 body.ag-page footer a:hover { color: var(--accent); }
 
+/* --- sc-cd = dark forest green — clear visual rhythm vs near-black sc-d --- */
+body.ag-page .sc-cd { background: #0c1a08; }
+
+/* --- Hero: reveal the green nature photo, vignette keeps text readable --- */
+body.ag-page .hero-bg {
+  opacity: 0.42;
+  object-position: center 15%;
+}
+body.ag-page .hero {
+  background:
+    radial-gradient(ellipse at 65% 50%, rgba(8,6,2,0.82) 25%, rgba(8,6,2,0.28) 100%),
+    var(--bg-dark);
+}
+
+/* --- Amber racing stripe before each section title --- */
+body.ag-page .row-text h2::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+
+/* --- Feature items: amber top-stripe accent --- */
+body.ag-page .feature-item {
+  border-top: 2px solid rgba(245,184,48,0.14);
+  transition: border-color .25s;
+}
+body.ag-page .feature-item:hover { border-top-color: rgba(245,184,48,0.65); }
+
+/* --- First store button ambient glow pulse --- */
+@keyframes ag-glow {
+  0%,100% { box-shadow: 0 4px 18px rgba(245,184,48,0.28); }
+  50%      { box-shadow: 0 4px 36px rgba(245,184,48,0.62), 0 0 0 3px rgba(245,184,48,0.12); }
+}
+body.ag-page .store-buttons .btn-store:first-child,
+body.ag-page .cta-store-buttons .btn-store:first-child {
+  animation: ag-glow 2.8s ease-in-out infinite;
+}
+
 @media (max-width: 768px) {
   .ag-sec-header { padding: 40px 16px 0; }
+  body.ag-page .row-text h2::before { display: none; }
 }
 
 /* ==========================================
