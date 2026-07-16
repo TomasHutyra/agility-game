@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zásady ochrany osobních údajů – ZONCNA | Bookdragon Development</title>
+  <meta name="description" content="Zásady ochrany osobních údajů pro ZONCNA od Bookdragon Development. ZONCNA nesbírá žádná osobní data." />
+  <link rel="canonical" href="https://www.bookdragondev.com/zoncna-privacy-policy.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.bookdragondev.com/zoncna-privacy-policy.html" />
+  <meta property="og:title" content="Zásady ochrany osobních údajů – ZONCNA" />
+  <meta property="og:description" content="ZONCNA nesbírá žádná osobní data." />
+  <meta property="og:site_name" content="Bookdragon Development" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="zn-page">
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Bookdragon Development logo" width="40" height="40" />
+      Bookdragon Development
+    </a>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="agility-game.html">Agility Game</a></li>
+        <li><a href="questdeck.html">QuestDeck</a></li>
+        <li><a href="zoncna.html" class="active">Zoncna</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="pp-brand">
+    <img src="images/zoncna-icon.png" alt="ZONCNA icon" class="pp-brand__icon" />
+    <div>
+      <span class="pp-brand__label">ZONCNA</span>
+      <h1 class="pp-brand__title">Zásady ochrany osobních údajů</h1>
+    </div>
+  </div>
+</div>
+
+<div class="page-content">
+
+  <div class="highlight-box">
+    <p class="highlight-box__title">ZONCNA neshromažďuje žádná osobní data.</p>
+    <p class="highlight-box__sub">Hra funguje offline a data z tvého zařízení nikam neodesílá.</p>
+  </div>
+
+  <p>Tyto zásady ochrany osobních údajů vysvětlují, jak ZONCNA ("aplikace") nakládá s informacemi.</p>
+
+  <h2>Sběr dat</h2>
+  <p>ZONCNA nesbírá, neukládá, nepřenáší ani nesdílí žádné osobní údaje. Aplikace nevyžaduje účet, přihlášení ani žádnou registraci.</p>
+
+  <h2>Data uložená v zařízení</h2>
+  <p>Aplikace ukládá následující data pouze lokálně na tvém zařízení:</p>
+  <ul>
+    <li>Kroniku sucha (jméno a skóre v top 10 žebříčku)</li>
+    <li>Odemčené odznaky a herní postup</li>
+    <li>Nastavení zvuku</li>
+  </ul>
+  <p>Tato data nikdy neopouští tvé zařízení. Jsou uložena pomocí lokálního úložiště prohlížeče (localStorage) a nejsou přístupná nám ani žádné třetí straně.</p>
+
+  <h2>Síťový přístup</h2>
+  <p>ZONCNA nevytváří žádné síťové požadavky za běhu. Mapový podklad je statický a je součástí instalace/buildu — hra po instalaci funguje zcela offline.</p>
+
+  <h2>Služby třetích stran</h2>
+  <p>ZONCNA nepoužívá žádné SDK třetích stran, reklamní sítě, analytické nástroje ani nástroje pro hlášení pádů.</p>
+
+  <h2>Ochrana dětí</h2>
+  <p>ZONCNA nesbírá žádné informace od nikoho, včetně dětí mladších 13 let.</p>
+
+  <h2>Změny těchto zásad</h2>
+  <p>Pokud se datové praktiky aplikace v budoucí verzi změní, tyto zásady budou odpovídajícím způsobem aktualizovány.</p>
+
+  <h2>Kontakt</h2>
+  <p>Pokud máš jakékoli dotazy k těmto zásadám, napiš nám na: <a href="mailto:office@bookdragondev.com">office@bookdragondev.com</a></p>
+
+  <p style="margin-top:32px"><a href="zoncna.html">&larr; Zpět na ZONCNA</a></p>
+
+</div>
+
+<footer>
+  <span>&copy;&nbsp;2025&nbsp;Bookdragon Development</span>
+  <a href="zoncna-privacy-policy.html">Privacy policy</a>
+  <a href="contact.html">Contact</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('nav-menu');
+  hamburger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', String(open));
+  });
+  menu.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => menu.classList.remove('open'))
+  );
+</script>
+</body>
+</html>
