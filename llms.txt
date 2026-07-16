@@ -1,0 +1,19 @@
+# Bookdragon Development
+
+> Independent game and app studio based in Brno, Czech Republic. We build games and apps we'd genuinely want to use ourselves — polished, fun, free of dark patterns, and respectful of user data.
+
+## Products
+
+- [Agility Game](https://www.bookdragondev.com/agility-game.html): Dog agility sport simulator. Design original courses, choose your dog, and race through jumps, tunnels and slaloms. Available on PC (Epic Store, Steam) and Android (Google Play). Free to try.
+- [QuestDeck](https://www.bookdragondev.com/questdeck.html): A pocket deck of real-world activity cards for Android. Pick a mood, flip three cards, go do something real. Fully offline, no account, no data collection. Currently in alpha.
+- [Zoncna](https://www.bookdragondev.com/zoncna.html): Ironic Czech-language weather-radar arcade game ("simulátor brněnských srážek") — drag the city of Brno around a map to dodge rain. Live and playable at https://www.zoncna.eu/; Android version is in closed beta. Czech-language only.
+
+## Company
+
+- [Contact](https://www.bookdragondev.com/contact.html): office email, Discord, and Facebook for Bookdragon Development. Based in Brno, Czech Republic.
+
+## Legal
+
+- [Agility Game Privacy Policy](https://www.bookdragondev.com/privacy-policy.html)
+- [QuestDeck Privacy Policy](https://www.bookdragondev.com/questdeck-privacy-policy.html)
+- [Zoncna Privacy Policy](https://www.bookdragondev.com/zoncna-privacy-policy.html) (Czech)
