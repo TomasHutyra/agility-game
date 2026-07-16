@@ -38,5 +38,10 @@
   to = "/questdeck-privacy-policy.html"
   status = 301
 
+[[redirects]]
+  from = "/zoncna"
+  to = "/zoncna.html"
+  status = 301
+
 [build]
   publish = "."
